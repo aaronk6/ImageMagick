@@ -17,9 +17,14 @@
 #include "coders/coders-private.h"
 
 #define MagickRIXHeaders \
-  MagickCoderHeader("RIX", 0, "RIX")
+  MagickCoderHeader("RIX", 0, "RIX3")
 
-#define MagickRIXAliases
+#define MagickRIXAliases \
+  MagickCoderAlias("RIX", "SCI") \
+  MagickCoderAlias("RIX", "SCR") \
+  MagickCoderAlias("RIX", "SCP") \
+  MagickCoderAlias("RIX", "SCG") \
+  MagickCoderAlias("RIX", "SCU")
 
 #if defined(__cplusplus) || defined(c_plusplus)
 extern "C" {

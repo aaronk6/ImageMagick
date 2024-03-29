@@ -300,6 +300,8 @@ MAGICKCORE_CODER_SRCS = \
 	coders/rgb.h \
 	coders/rgf.c \
 	coders/rgf.h \
+	coders/rix.c \
+	coders/rix.h \
 	coders/rla.c \
 	coders/rla.h \
 	coders/rle.c \
@@ -504,6 +506,7 @@ CODERS_NOINST_HDRS = \
 	coders/raw.h \
 	coders/rgb.h \
 	coders/rgf.h \
+	coders/rix.h \
 	coders/rla.h \
 	coders/rle.h \
 	coders/screenshot.h \
@@ -634,6 +637,7 @@ coders_LTLIBRARIES = \
 	coders/raw.la \
 	coders/rgb.la \
 	coders/rgf.la \
+	coders/rix.la \
 	coders/rla.la \
 	coders/rle.la \
 	coders/scr.la \
@@ -1284,6 +1288,12 @@ coders_rgf_la_SOURCES      = coders/rgf.c
 coders_rgf_la_CPPFLAGS     = $(MAGICK_CODER_CPPFLAGS)
 coders_rgf_la_LDFLAGS      = $(MODULECOMMONFLAGS)
 coders_rgf_la_LIBADD       = $(MAGICKCORE_LIBS)
+
+# RIX coder module
+coders_rix_la_SOURCES      = coders/rix.c
+coders_rix_la_CPPFLAGS     = $(MAGICK_CODER_CPPFLAGS)
+coders_rix_la_LDFLAGS      = $(MODULECOMMONFLAGS)
+coders_rix_la_LIBADD       = $(MAGICKCORE_LIBS)
 
 # RLA coder module
 coders_rla_la_SOURCES      = coders/rla.c

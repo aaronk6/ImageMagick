@@ -145,6 +145,7 @@
 #include "coders/raw.h"
 #include "coders/rgb.h"
 #include "coders/rgf.h"
+#include "coders/rix.h"
 #include "coders/rla.h"
 #include "coders/rle.h"
 #include "coders/scr.h"
