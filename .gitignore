@@ -98,3 +98,5 @@
 .libs
 Makefile
 Makefile.PL
+
+.DS_Store
